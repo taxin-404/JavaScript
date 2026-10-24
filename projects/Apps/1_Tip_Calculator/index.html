@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tip Calculator — Mini App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <p class="eyebrow">Mini App</p>
+      <h1>Tip Calculator</h1>
+      <p class="hint">Split the bill without the mental math.</p>
+
+      <form id="tip-form">
+        <label>
+          <span>Bill amount</span>
+          <input id="bill" type="number" min="0" step="0.01" value="48.00" inputmode="decimal" />
+        </label>
+        <label>
+          <span>Tip percentage</span>
+          <select id="tip">
+            <option value="0.15">15%</option>
+            <option value="0.18" selected>18%</option>
+            <option value="0.20">20%</option>
+            <option value="0.25">25%</option>
+          </select>
+        </label>
+        <button type="submit">Calculate</button>
+      </form>
+
+      <div class="results" aria-live="polite">
+        <p><span>Tip</span><strong id="tip-amount">$0.00</strong></p>
+        <p><span>Total</span><strong id="total">$0.00</strong></p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

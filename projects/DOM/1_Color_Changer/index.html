@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color Changer — DOM Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <p class="eyebrow">DOM Practice</p>
+      <h1>Color Changer</h1>
+      <p class="hint">Choose a swatch to repaint the page.</p>
+      <div class="swatches" role="group" aria-label="Choose a background color">
+        <button type="button" data-color="#0f766e" data-label="Ocean" style="--swatch: #0f766e">Ocean</button>
+        <button type="button" data-color="#b45309" data-label="Sunset" style="--swatch: #b45309">Sunset</button>
+        <button type="button" data-color="#6d28d9" data-label="Grape" style="--swatch: #6d28d9">Grape</button>
+        <button type="button" data-color="#be123c" data-label="Berry" style="--swatch: #be123c">Berry</button>
+        <button type="button" data-color="#334155" data-label="Slate" style="--swatch: #334155">Slate</button>
+      </div>
+      <p class="current" id="current">Current: Ocean</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
